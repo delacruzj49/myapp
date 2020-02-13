@@ -1,0 +1,17 @@
+  <ContainerSec>
+            <Header primary> There's grace <br/> for that</Header>
+            <Header>Podcast</Header>
+</ContainerSec>
+
+const ContainerSec = Styled(Container)`
+text-align:center;
+height:200px;
+padding-top:10px;
+`
+
+const Header = Styled.h1`
+font-size:70px;
+padding-top:40px;
+font-family: ${props => props.primary ? "'Meddon', cursive" : " 'Lato', sans-serif"};
+color:${props => props.primary ? "#698474" : "white"};
+`
