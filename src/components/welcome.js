@@ -18,8 +18,13 @@ text-align:center;
 const Image = Styled.img`
 height:400px;
 position:relative;
-padding:0px 24px 48px;
+padding:0px 0px 48px ;
 justify-content:center;
+
+@media (max-width :375px){
+    height:300px;
+}
+
 `
 const H1 = Styled.h1`
 text-align:center;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
+import {Link} from 'react-router-dom';
 import {
     Navbar,
     Nav, Button
@@ -25,7 +26,18 @@ const Navbaralt = Styled(Navbar)`
 height:40px; 
 background:#e5e4cc;
 `
+const Links = Styled(Link)`
+display: block;
+color: black;
+text-align: center;
+padding: 0px 10px;
+text-decoration: none;
 
+&:hover{
+    text-decoration:none;
+    color:#698474;
+}
+`
 
     const Navigation = () => (
         <footer>
@@ -43,8 +55,8 @@ background:#e5e4cc;
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">About</Nav.Link>
+                    <Links to ='/'>Home</Links>
+                    <Links to ='/about'>About</Links>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
