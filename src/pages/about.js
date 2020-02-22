@@ -1,9 +1,14 @@
 import React from 'react'
 
-
+//Components
+import Navigation from '../components/navigation';
+import Footer from '../components/footer';
+import AboutSection from '../components/about';
 const About = () => (
     <div>
-    About page
+    <Navigation/>
+    <AboutSection/>
+    <Footer/>
        
     </div>
 

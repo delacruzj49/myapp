@@ -8,6 +8,7 @@ import {
 
 const Brands = Styled(Navbar.Brand)`
 font-family: 'Meddon', cursive;
+font-size:15px;
 `
 
 const Buttons = Styled(Button)`
