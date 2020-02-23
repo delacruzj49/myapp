@@ -16,7 +16,7 @@ background:none;
 `
 const Copy = Styled.p`
 text-align:center;
-background:#e5e4cc;
+
 `
 
 
