@@ -66,9 +66,9 @@ class AboutSection extends Component {
         }
     }
 
+   
     componentDidMount(){
-
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('https://jsonplaceholder.typicode.com/posts/')
         .then(res =>res.json())
         .then(json =>{
             this.setState({
