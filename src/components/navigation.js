@@ -33,7 +33,7 @@ color: black;
 text-align: center;
 padding: 0px 10px;
 text-decoration: none;
-font-size:20px;
+font-size:20px;lsd
 
 &:hover{
     text-decoration:none;
