@@ -60,7 +60,7 @@ const Welcome = () => (
                         <Image src={Person}  />
                     </Divimage>
                 </Col>
-                <Col md='auto' >
+                <Col md='large' >
                         <H1>Behind The Mic</H1>
                         <P> 
                         We all know life  can be hectic and confusing at times...you will mess up and probably wonder if it will all be okay.<br/>
