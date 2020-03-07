@@ -10,9 +10,8 @@ padding:0;
 `
 
 const Jumbo = Styled(Jumbotron)`
-background:white;
 text-align:center;
-
+background:none;
 `
 
 const Image = Styled.img`
