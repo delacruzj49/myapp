@@ -10,6 +10,7 @@ width:90%;
 float:center;
 margin:0 auto;
 height:300px;
+padding-top:30px;
 background:none;
 `
 
@@ -44,7 +45,6 @@ const Subscribe = () => (
             <Div>
                 <h1> SUBSCRIBE</h1>
                 <p> Subscribe to get the latest update on the next podcast!</p>
-            
                 <Form>
                     <Form.Group as={Row} controlId="formHorizontalEmail">
                         <Form.Label column sm={3}></Form.Label>
@@ -52,8 +52,8 @@ const Subscribe = () => (
                             <FormControl type="email" placeholder="Email : example@email.com" />
                         </Col>
                     </Form.Group>
+                    <Buttons variant="secondary">Sign up</Buttons>
                 </Form>
-                <Buttons variant="secondary">Sign up</Buttons>
             </Div>
         </Jumbo>
     </Contain>
