@@ -1,7 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
 import {Jumbotron,Container,Row,Col,Form,Button} from 'react-bootstrap';
-
 const Contain = Styled(Container)`
 width:90%;
 `
@@ -51,12 +50,23 @@ class Subscribe extends React.Component {
       }
     
       handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
+          alert("Thanks for Subscribing! ")
         event.preventDefault();
+        //add to post api
+        fetch('http://localhost:4000/subscribers',{
+            method:'POST',
+            body:JSON.stringify({
+                email:this.state.value
+            }),
+            headers:{
+                "Content-type":"application/json; charset =UTF-8"
+            }
+        })
       }
-
+      
     render(){
         return(
+            
             <Contain fluid>
                 <Jumbo fluid>
                     <Div>
@@ -70,11 +80,15 @@ class Subscribe extends React.Component {
                                 <FormControl type="email" value={this.state.value} onChange={this.handleChange} placeholder="Enter email : name@email.com" />
                                 </Col>
                             </Form.Group>
-                            <Buttons type="submit" value="submit"  >Sign up</Buttons>
+                            <Buttons type="submit" value="submit" >
+                            Sign up
+                            </Buttons>
+                            
                         </Form>
                     </Div>
                 </Jumbo>
             </Contain>
+            
         );
     }
 }
