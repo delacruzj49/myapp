@@ -59,7 +59,7 @@ class Subscribe extends React.Component {
                 email:this.state.value
             }),
             headers:{
-                "Content-type":"application/json; charset =UTF-8"
+                "Content-type":"application/json; charset=utf-8"
             }
         })
       }
@@ -80,7 +80,7 @@ class Subscribe extends React.Component {
                                 <FormControl type="email" value={this.state.value} onChange={this.handleChange} placeholder="Enter email : name@email.com" />
                                 </Col>
                             </Form.Group>
-                            <Buttons type="submit" value="submit" >
+                            <Buttons type="submit"  >
                             Sign up
                             </Buttons>
                             
