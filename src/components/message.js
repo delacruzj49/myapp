@@ -1,6 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
-import {Form ,Container,Jumbotron,Row,Col,Button} from 'react-bootstrap';
+import {Form ,Container,Jumbotron,Row,Col} from 'react-bootstrap';
+import ModalShow from './modal-submissions.js';
 
 const Contain = Styled(Container)`
 width:90%;
@@ -24,17 +25,7 @@ border-bottom: 2px solid black;
 width: 100%;
 background:none;
 `
-const Buttons = Styled(Button)`
-color:#698474;
-border-color:#698474;
-background-color:white;
-text-align:center;
-width:100px;
-&:hover{
-    background-color:#698474;
-    color:#e5e4cc;
-}
-`
+
 
 class Message extends React.Component{
     constructor(props){
@@ -58,7 +49,6 @@ class Message extends React.Component{
     }
 
     handleSubmit(event){
-        alert('Thanks for your input');
         event.preventDefault();
         //Add fetch to post to DB using api
         fetch('http://localhost:4000/questions',{
@@ -98,7 +88,7 @@ class Message extends React.Component{
                                     <FormControl  name ="comment" value={this.state.comment} onChange={this.handleChange}  as="textarea" rows="3" placeholder="Thought, Questions, Ideas Comments Here" />
                                 </Col>
                             </Form.Group>
-                            <Buttons  type="submit" value="submit" >Send</Buttons>
+                            <ModalShow component="other"/>  
                         </Form>
                         
                     </Div>
